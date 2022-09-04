@@ -1,0 +1,9 @@
+
+#news-description{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.modal-author-image{
+    max-width: 10%;
+}
