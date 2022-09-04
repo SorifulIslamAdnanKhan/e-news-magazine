@@ -31,7 +31,7 @@ const displayCategory = (categories) =>{
 loadCategory();
 
 const categoryNewsById = async category_id =>{
-
+    loader(true);
     const url = `https://openapi.programming-hero.com/api/news/category/${category_id}`;
     try{
         const res = await fetch(url);
@@ -44,12 +44,11 @@ const categoryNewsById = async category_id =>{
 }
 
 const displayCategoryNews = data =>{
-    
+
     const newsContainer = document.getElementById('news-container');
     newsContainer.innerHTML = '';
-    
     data.forEach(news =>{
-       
+        
         const singleNews = document.createElement('div');
         singleNews.classList.add('card', 'm-5');
         singleNews.innerHTML =
@@ -90,7 +89,9 @@ const displayCategoryNews = data =>{
             </div>    
         `;
         newsContainer.appendChild(singleNews);  
-    })
+    });
+
+    loader(false);
 }
 
 const newsDetailsById = async news_id =>{
@@ -130,3 +131,16 @@ const displayNewsModal = data =>{
     `;
     modalBodySection.appendChild(modalBody);
 }
+
+const loader = isLoading =>{
+
+    const newsLoader = document.getElementById('loader');
+    if(isLoading){
+        newsLoader.classList.remove('d-none');
+    }
+    else{
+        newsLoader.classList.add('d-none');
+    }
+
+}
+
