@@ -54,7 +54,7 @@
                     <h2 class="accordion-header" id="headingOne">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
                             aria-expanded="true" aria-controls="collapseOne">
-                            What are difference between var, let and const keywords in JavaScript?
+                            1. What are the differences between var, let and const keywords in JavaScript?
                         </button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
@@ -68,7 +68,19 @@
                             <p> However, the scope of var is Global and Function.
                             The scope is global when a var variable is declared outside a function. This means that any variable that is declared
                             with var outside a function block is available for use in the whole window. var is function scoped when it is declared
-                            within a function. This means that it is available and can be accessed only within that function.</p>
+                            within a function. This means that it is available and can be accessed only within that function.</p> <br>
+                            <h3>let</h3>
+                            <p>
+                                JavaScript ES6 or ES2015 comes with two new keywords (let, const) to declare variables. let is a block-scoped based
+                                variable declaration keyword. A variable declared in a block with let is only available for use within that block. let
+                                can be updated but not re-declared.
+                            </p> <br>
+                            <h3>const</h3>
+                            <p>
+                                Variables declared with the const maintain constant values. const declarations share some similarities with let
+                                declarations. Most importantly, a variable with a const keyword cannot be updated or re-declared.
+                            </p>
+
                         </div>
                     </div>
                 </div>
@@ -76,17 +88,48 @@
                     <h2 class="accordion-header" id="headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Accordion Item #2
+                            2. What are the differences between the arrow and regular function in JavaScript?
                         </button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
-                            plugin adds the appropriate classes that we use to style each element. These classes control the overall
-                            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                            custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
-                            within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            <h3>Regular vs Arrow</h3>
+                            <p>
+                                JavaScript's arrow functions might seem the same as regular functions on the surface, but they have some very important
+                                differences:
+                                <br>
+                                <b>Syntactical Differences</b>
+                                <br>
+                                example of an arrow function
+                                <br>
+                                <br>
+                                let x = function function_name(parameters){
+                                // body of the function
+                                };
+                                <br>
+                                <br>
+                                example of a regular function
+                                <br>
+                                <br>
+
+                                let square = function(x){
+                                return (x*x);
+                                };
+                                <br>
+                                <br>
+                                <b>this value (execution context)</b> <br>
+                                Unlike regular functions, arrow functions do not have their own this.<br>
+                                
+                                <b>Usage as constructors</b><br>
+                                
+                                Regular functions created using function declarations or expressions are ‘constructible’ and ‘callable’. Since regular
+                                functions are constructible, they can be called using the ‘new’ keyword. However, the arrow functions are only
+                                ‘callable’ and not constructible.<br>
+                                
+                                <b>Arguments Binding</b><br>
+                                Arguments objects are not available in arrow functions but are available in regular functions.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -94,17 +137,63 @@
                     <h2 class="accordion-header" id="headingThree">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Accordion Item #3
+                           3. What are the differences of map, forEach, filter, and find in JavaScript?
                         </button>
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
-                            plugin adds the appropriate classes that we use to style each element. These classes control the overall
-                            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                            custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
-                            within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            <h3>.forEach:</h3>
+                            <p>.forEach(), is used to execute the same code on every element in an array but does not change the array and it returns
+                            undefined.</p>
+
+                            <h3>.map():</h3>
+                            <p>.map() executes the same code on every element in an array and returns a new array with the updated elements.</p>
+
+                            <h3>.filter():</h3>
+                            <p>.filter() checks every element in an array to see if it meets certain criteria and returns a new array with the elements
+                            that return truthy for the criteria.</p>
+
+                            <h3>.find()</h3>
+                            <p>.find() is used when you want to select a single element from an array.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                           4. Why use Template String?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>
+                                Template strings are a powerful feature of modern JavaScript released in ES6. It lets us insert/interpolate variables
+                                and expressions into strings without needing to concatenate like in older versions of JavaScript. It allows us to create
+                                strings that are complex and contain dynamic elements. Another great thing that comes with template strings are tags.
+                                Tags are functions that take a string and the decomposed parts of the string as parameters and are great for converting
+                                strings to different entities.
+                                <br>
+                                <br>
+                                The syntax for creating template strings is by using backticks to delimit them. For example, we can write: 
+                                <br>
+                                <br>
+                                
+                                `This is a string`
+                                <br>
+                                <br>
+                                This is a very simple example of a template string. All the content is constant and there are no variables or
+                                expressions in it. To add variables and or expressions to a string, we can do the following.
+                                <br>
+                                <br>
+                                // New JS with templates and interpolation
+                                <br>
+                                <br>
+                                const oldEnoughToMarry = age >= 21; <br>
+                                const oldEnough = `You are ${oldEnoughToMarry ? 'old enough' : 'too young'} to drink.`
+                            </p>
                         </div>
                     </div>
                 </div>
