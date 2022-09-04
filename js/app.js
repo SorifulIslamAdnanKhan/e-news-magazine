@@ -47,6 +47,15 @@ const displayCategoryNews = data =>{
 
     const newsContainer = document.getElementById('news-container');
     newsContainer.innerHTML = '';
+
+    const newsNumberByCategory = document.getElementById('news-number');
+    const newsNumber = document.createElement('div');
+    newsNumberByCategory.innerHTML = 
+    `
+        <h5>${data.length} news found for this category.</h5>
+    `;
+    newsNumberByCategory.appendChild(newsNumber);
+
     data.forEach(news =>{
         
         const singleNews = document.createElement('div');
@@ -143,4 +152,5 @@ const loader = isLoading =>{
     }
 
 }
+
 

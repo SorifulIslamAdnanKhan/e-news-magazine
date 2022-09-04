@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b942952c4c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>e-News & Magazine</title>
+</head>
+
+<body>
+    <!-- header area start -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">e-News & Magazine</a>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item p-2">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item p-2">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                    </ul>
+                    <img src="images/Avatar.png" class="p-2" alt="">
+                </div>
+
+            </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header area end -->
+
+    <!-- main area start -->
+    <main class="container">
+        <!-- question area start -->
+        <section>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            What are difference between var, let and const keywords in JavaScript?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <h3>var</h3>
+                            <p>The var is the oldest keyword for declaring a variable in JavaScript. It can be declared globally. That means you can
+                            access a var (variable ) everywhere in the program. You can declare the 2 variables with the same name using the var
+                            keyword. Also, the user can reassign the value into the var variable.
+                            </p> <br>
+                            <p> However, the scope of var is Global and Function.
+                            The scope is global when a var variable is declared outside a function. This means that any variable that is declared
+                            with var outside a function block is available for use in the whole window. var is function scoped when it is declared
+                            within a function. This means that it is available and can be accessed only within that function.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Accordion Item #2
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+                            plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                            custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                            within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Accordion Item #3
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                            plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                            custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                            within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- question area end -->
+
+    </main>
+    <!-- main area end -->
+
+    <!-- footer area start -->
+    <footer class="text-center bg-light p-4 mt-5">
+        <p class="mb-0 text-secondary">Copyright © 2022 e-News & Magazine</p>
+    </footer>
+    <!-- footer area end -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
